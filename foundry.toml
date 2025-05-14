@@ -1,0 +1,17 @@
+[profile.default]
+src = 'src'
+out = 'out'
+libs = ['lib']
+remappings = [
+    "@openzeppelin/=lib/openzeppelin-contracts/",
+    "@openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+    "forge-std/=lib/forge-std/src/"
+]
+
+[etherscan]
+optimism-sepolia = { key = "${ETHERSCAN_API_KEY}" }
+
+[rpc_endpoints]
+optimism-sepolia = "${OP_SEPOLIA_RPC_URL}"
+
+# See more config options https://github.com/foundry-rs/foundry/tree/master/config
